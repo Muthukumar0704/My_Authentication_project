@@ -1,3 +1,4 @@
+//This was not linked in any HTML pages it satisfies only the basic conditions .The login.js is linked in the HTML pages
 function createUser() {
   var names = document.getElementById("userNm");
   var pws = document.getElementById("pw");
