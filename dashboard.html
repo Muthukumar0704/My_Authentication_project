@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> MyKare| Dashboard </title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='Mykare_logo'><img src="myKare_logo.webp" alt=""></i>
+            
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="active">
+                  
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                   
+                    <span class="links_name">Leads</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    
+                    <span class="links_name">Insurance</span>
+                </a>
+            </li>
+            <li class="log_out" onclick="Logged_out()">
+                <a href="#">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name" >Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <span class="dashboard">Dashboard</span>
+            </div>
+           
+            <div class="profile-details">
+                <img src="logo.png" alt="">
+                <span class="admin_name">User</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </nav>
+
+        <div class="home-content">
+            <div class="overview-boxes">
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">New Leads</div>
+                        <div class="number">30</div>
+                    </div>
+                  
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Achievements</div>
+                        <div class="number">03</div>
+                        
+                    </div>
+                 
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Missed Leads</div>
+                        <div class="number">00</div>
+                
+                    </div>
+               
+            </div>
+
+        </div>
+        <div>
+        <p id="contentContainer"></p>
+        </div>
+    </section>
+
+    <!-- <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+    </script> -->
+  <script>
+    function Logged_out() {
+        // Redirect to a different page after logout
+        window.location.href = "index.html";
+        alert("Do you want to LOG OUT");
+
+        // Clear the session history
+        if (window.history && window.history.pushState) {
+            window.history.pushState("", "", "index.html");
+        }
+    }
+  </script>
+  <script src="login.js">
+
+  </script>
+</body>
+
+</html>
